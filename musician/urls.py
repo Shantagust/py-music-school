@@ -4,7 +4,7 @@ from rest_framework import routers
 from musician import views
 
 route = routers.DefaultRouter()
-route.register("manage", views.MusicViewSet)
+route.register("manage", views.MusicViewSet, basename="manage")
 urlpatterns = [
     path("", include(route.urls))
 ]

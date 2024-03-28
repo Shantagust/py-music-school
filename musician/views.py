@@ -1,9 +1,9 @@
 from rest_framework import viewsets
 
 from musician.models import Musician
-from musician.serializers import MusicSerializer
+from musician.serializers import MusicianSerializer
 
 
 class MusicViewSet(viewsets.ModelViewSet):
     queryset = Musician.objects.all()
-    serializer_class = MusicSerializer
+    serializer_class = MusicianSerializer

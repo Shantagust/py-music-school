@@ -1,11 +1,11 @@
 from rest_framework import serializers
 
-from musician import models
+from musician.models import Musician
 
 
-class MusicSerializer(serializers.ModelSerializer):
+class MusicianSerializer(serializers.ModelSerializer):
     class Meta:
-        model = models
+        model = Musician
         fields = (
             "id",
             "first_name",
